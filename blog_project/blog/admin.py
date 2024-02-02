@@ -9,8 +9,8 @@ class PostInline(admin.TabularInline):
 
 @admin.register(Blog)
 class BlogAdmin(admin.ModelAdmin):
-    list_display = ('user',)
-    list_display_links = ('user',)
+    list_display = ('id', 'user')
+    list_display_links = ('id', 'user')
     inlines = [PostInline]
 
 
